@@ -33,8 +33,6 @@ let numberArray = [];
   const boop = "boop!";
   const neighbor = "Won't you be my neighbor?";
 
-  let final = [];
-
   function rogSay(event) {
     event.preventDefault();
 
@@ -48,7 +46,8 @@ let numberArray = [];
       return neighbor;
     } else {
       return number;
-    }
-  })
-  final = rogNum;
+    } 
+  } speak = rogSay 
+  let speak = [];
 }
+

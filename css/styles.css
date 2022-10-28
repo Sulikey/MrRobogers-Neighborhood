@@ -1,0 +1,16 @@
+.robot  {
+  width:300px;
+  height: auto;
+  float: left;
+  padding: 1%;
+  
+}
+
+.robot p{
+border-style: solid;
+  border-width: auto;
+  background-color: rgb(80, 48, 168);
+  }
+.robot img{
+    width: 300px;
+  }
