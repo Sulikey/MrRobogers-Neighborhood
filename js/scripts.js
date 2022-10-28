@@ -1,12 +1,3 @@
-
-
-window.addEventListener("load", function() {
-
-  const form = document.getElementById("count");
-  form.addEventListener("submit", numberToString);
-
-});
-
 let testNumber = 1234
 
 function numberToString(numberIn) {
@@ -29,4 +20,35 @@ function arrayOfNumbers (arrayIn) {
 
   })
 return numberArray
+}
+let numberArray = [];
+
+  function rogNum(input) {
+  for (let index = 0; index <= input; index++) {
+    numberArray.push(index.toString());
+  
+  rogSay();
+
+  const beep = "beep!";
+  const boop = "boop!";
+  const neighbor = "Won't you be my neighbor?";
+
+  let final = [];
+
+  function rogSay(event) {
+    event.preventDefault();
+
+    function rogSay() {
+  let rogNum = numberArray.map(function (number) {
+    if (number.includes("1")) {
+      return beep;
+    } else if (number.includes("2")) {
+      return boop;
+    } else if (number.includes("3")) {
+      return neighbor;
+    } else {
+      return number;
+    }
+  })
+  final = rogNum;
 }
