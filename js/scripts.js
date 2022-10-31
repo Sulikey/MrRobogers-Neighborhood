@@ -1,43 +1,41 @@
-let testNumber = 1234
+//let testNumber = 1234
 
-function numberToString(numberIn) {
-  return numberIn.toString();
-}
+//function numberToString(numberIn) {
+ // return numberIn.toString();
+//}
 
-let numberString = numberToString(testNumber);
+//let numberString = numberToString(testNumber);
 
 
-function splitString (stringIn) {
-  return stringIn.split("");
-}
+//function splitString (stringIn) {
+ // return stringIn.split("");
+//}
 
-let stringArray = splitString (numberString);
+//let stringArray = splitString (numberString);
 
-function arrayOfNumbers (arrayIn) {
-  let numberArray = arrayIn.map(function(place) {
-    return parseInt(place)
+//function arrayOfNumbers (arrayIn) {
+//  let numberArray = arrayIn.map(function(place) {
+//    return parseInt(place)
   
+//
+//})
+//return numberArray
+//}
 
-  })
-return numberArray
-}
-let numberArray = [];
+//let numberArray = [];
 
-  function rogNum(input) {
-  for (let index = 0; index <= input; index++) {
+  function rogNum(number) {
+    let numberArray = [];
+  for (let index = 0; index <= number; index++) {
     numberArray.push(index.toString());
-  
-  rogSay();
-
+  }
+  return numberArray;
+  }
   const beep = "beep!";
   const boop = "boop!";
   const neighbor = "Won't you be my neighbor?";
 
-  function rogSay(event) {
-    event.preventDefault();
-
-    function rogSay() {
-  let rogNum = numberArray.map(function (number) {
+    function rogSay(number) {
     if (number.includes("1")) {
       return beep;
     } else if (number.includes("2")) {
@@ -45,9 +43,21 @@ let numberArray = [];
     } else if (number.includes("3")) {
       return neighbor;
     } else {
-      return number;
+      return [index];
     } 
-  } speak = rogSay 
-  let speak = [];
-}
+  }
+
+  window.addEventListener("load", function(){
+    let form = document.querySelector("form");
+    form.addEventListener("submit" , rogSay1);
+  });
+
+  function rogSay1(event) {
+    event.preventDefault();
+
+    const input = document.getElementById("input").value;
+
+    const elementSelect = document.querySelector('h3#result');
+    document.getElementById('result').innerText = rogSay(input);
+  }
 
