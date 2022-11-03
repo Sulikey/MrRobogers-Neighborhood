@@ -12,7 +12,7 @@
 
 ## Description
 
-_This webpage is under construction but once finished it will be able to talk like a robot via digital input._
+_This webpage contains a silly robot that will beep boop once you enter any number._
 
 ## Setup/Installation Requirements
 
